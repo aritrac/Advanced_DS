@@ -1,0 +1,140 @@
+package ctci.solutions.aritra;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+/*
+ * Question: A binary search tree was created by traversing through an array from left to right and inserting each
+ * element. Given a binary search tree with distinct elements, print all possible arrays that could have led to this tree
+ * 
+ * Solution: We basically have to weave two arrays together.
+ * array1: {1,2}
+ * array2: {3,4}
+ * weaved: {1,2,3,4},{1,3,2,4},{1,3,4,2},{3,1,2,4},{3,1,4,2},{3,4,1,2}
+ */
+
+public class BST {
+	TreeNode fifty;
+	TreeNode twenty;
+	TreeNode sixty;
+	TreeNode ten;
+	TreeNode twentyfive;
+	TreeNode seventy;
+	TreeNode five;
+	TreeNode fifteen;
+	TreeNode sixtyfive;
+	TreeNode eighty;
+	
+	public BST(){
+		fifty = new TreeNode(50);
+		twenty = new TreeNode(20);
+		sixty = new TreeNode(60);
+		ten = new TreeNode(10);
+		twentyfive = new TreeNode(25);
+		seventy = new TreeNode(70);
+		five = new TreeNode(5);
+		fifteen = new TreeNode(15);
+		sixtyfive = new TreeNode(65);
+		eighty = new TreeNode(80);
+		
+		fifty.left = twenty;
+		fifty.right = sixty;
+		
+		twenty.left = ten;
+		twenty.right = twentyfive;
+		
+		sixty.right = seventy;
+		
+		ten.left = five;
+		ten.right = fifteen;
+		
+		seventy.left = sixtyfive;
+		seventy.right = eighty;
+	}
+	
+	public static void main(String[] args) {
+			
+			BST fca = new BST();
+			
+			ArrayList<LinkedList<Integer>> lists = fca.allSequences(fca.fifty);
+			Iterator<LinkedList<Integer>> iter = lists.iterator();
+			while(iter.hasNext()){
+				LinkedList<Integer> list = iter.next();
+				for(int z = 0; z < list.size(); z++){
+					System.out.print(list.get(z) + "->");
+				}
+				System.out.println();
+			}
+	}
+	
+	ArrayList<LinkedList<Integer>> allSequences(TreeNode node){
+		ArrayList<LinkedList<Integer>> result = new ArrayList<LinkedList<Integer>>();
+		
+		if(node == null){
+			result.add(new LinkedList<Integer>());
+			return result;
+		}
+		LinkedList<Integer> prefix = new LinkedList<Integer>();
+		prefix.add(node.data);
+		
+		//Recurse on left and right subtrees
+		ArrayList<LinkedList<Integer>> leftSeq = allSequences(node.left);
+		ArrayList<LinkedList<Integer>> rightSeq = allSequences(node.right);
+		
+		System.out.println(leftSeq);
+		System.out.println(rightSeq);
+		
+		//Weave together each list from the left and right sides
+		for(LinkedList<Integer> left : leftSeq){
+			for(LinkedList<Integer> right : rightSeq){
+				ArrayList<LinkedList<Integer>> weaved = new ArrayList<LinkedList<Integer>>();
+				weaveLists(left,right,weaved,prefix);
+				result.addAll(weaved);
+			}
+		}
+		return result;
+	}
+	
+	/*
+	 * Weave lists together in all possible ways. This algorithm works by removing the head from one list,
+	 * recursing,and then doing the same thing with the other list.
+	 */
+	void weaveLists(LinkedList<Integer> first, LinkedList<Integer> second, ArrayList<LinkedList<Integer>> results, LinkedList<Integer> prefix){
+		//One list is empty. Add remainder to a cloned prefix and store result
+		if(first.size() == 0 || second.size() == 0){
+			LinkedList<Integer> result = (LinkedList<Integer>)prefix.clone();
+			result.addAll(first);
+			result.addAll(second);
+			results.add(result);
+		}
+		
+		/*
+		 * Recurse with head of first added to the prefix. Removing the head will damage first, so we'll need to put it back where we found it afterwards
+		 */
+		int headFirst = first.removeFirst();
+		prefix.addLast(headFirst);
+		weaveLists(first,second, results, prefix);
+		prefix.removeLast();
+		first.addFirst(headFirst);
+		
+		/*
+		 * Do the same thing with second, damaging and then restoring the list.
+		 */
+		int headSecond = second.removeFirst();
+		prefix.addLast(headSecond);
+		weaveLists(first,second,results,prefix);
+		prefix.removeLast();
+		second.addFirst(headSecond);
+	}
+}
+
+class TreeNode{
+	int data;
+	TreeNode left;
+	TreeNode right;
+	
+	public TreeNode(int data){
+		this.data = data;
+	}
+}

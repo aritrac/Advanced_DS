@@ -1,0 +1,12 @@
+package ctci.solutions.aritra;
+
+/*
+ * Question: You are given a list of projects in the world, but it can be tricky to code perfectly. In a problem like this, it's useful
+ * to sketch out pseudocode to carefully outline the different cases.
+ */
+
+public class BuildOrder {
+	public static void main(String[] args) {
+		
+	}
+}

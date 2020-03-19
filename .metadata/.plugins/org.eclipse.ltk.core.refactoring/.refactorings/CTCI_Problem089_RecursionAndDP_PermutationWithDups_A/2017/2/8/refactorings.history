@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ctci.solutions.aritra.PermuationWithDups&apos; to &apos;PermutationWithDups&apos;&#x0D;&#x0A;- Original project: &apos;CTCI_Problem089_RecursionAndDP_PermutationWithDups_A&apos;&#x0D;&#x0A;- Original element: &apos;ctci.solutions.aritra.PermuationWithDups&apos;&#x0D;&#x0A;- Renamed element: &apos;ctci.solutions.aritra.PermutationWithDups&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PermuationWithDups&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ctci.solutions.aritra{PermuationWithDups.java[PermuationWithDups" matchStrategy="1" name="PermutationWithDups" qualified="false" references="true" similarDeclarations="false" stamp="1487479364609" textual="false" version="1.0"/>
+</session>

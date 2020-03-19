@@ -1,0 +1,9 @@
+import java.util.*;
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        long[] arr = new long[n];
+    }
+}

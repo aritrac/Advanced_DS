@@ -1,0 +1,40 @@
+import java.io.BufferedInputStream;
+import java.io.InputStreamReader;
+import java.util.*;
+
+public class Solutions {
+
+	public static void main(String[] args) {
+		BufferedInputStream br = new BufferedInputStream(new InputStreamReader(System.in));
+		int N = in.nextInt();
+		int Q = in.nextInt();
+		in.nextLine();
+		//in.next();
+		if (N < 1 || N > 100000)
+			return;
+		if (Q < 1 || Q > 100000)
+			return;
+		int lastAns = 0;
+		List<List<Integer>> seq = new ArrayList<List<Integer>>();
+		for (int j = 0; j < N; j++) {
+			seq.add(new ArrayList<Integer>());
+		}
+
+		for (int i = 0; i < Q ; i++) {
+			int type = in.nextInt();
+			int x = in.nextInt();
+			int y = in.nextInt();
+			in.nextLine();
+			if (type == 1) {
+				int s = (x ^ lastAns) % N;
+				seq.get(s).add(y);
+			}
+			if (type == 2) {
+				int s = (x ^ lastAns) % N;
+				lastAns = seq.get(s).get(y % (seq.get(s).size()));
+				System.out.println(lastAns);
+			}
+		}
+
+	}
+}

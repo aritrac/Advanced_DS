@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/CTCI_Problem049_TreesAndGraphs_4_5_ValidateBST_C/src/ctci/solutions/aritra/ValidateBST.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="ctci.solutions.aritra.ValidateBST"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="CTCI_Problem049_TreesAndGraphs_4_5_ValidateBST_C"/>
+</launchConfiguration>

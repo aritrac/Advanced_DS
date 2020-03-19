@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;CTCI_Problem211_HardProblems_ShortestSuperSequence_A&apos; to &apos;CTCI_Problem211_HardProblems_MissingTwoNumbers_A&apos;&#x0D;&#x0A;- Original element: &apos;CTCI_Problem211_HardProblems_ShortestSuperSequence_A&apos;&#x0D;&#x0A;- Renamed element: &apos;CTCI_Problem211_HardProblems_ShortestSuperSequence_A&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;CTCI_Problem211_HardProblems_ShortestSuperSequence_A&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=CTCI_Problem211_HardProblems_ShortestSuperSequence_A" name="CTCI_Problem211_HardProblems_MissingTwoNumbers_A" references="true" stamp="1491617784046" version="1.0"/>
+</session>

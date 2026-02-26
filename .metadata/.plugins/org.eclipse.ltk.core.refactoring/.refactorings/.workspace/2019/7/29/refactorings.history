@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;CTCI_Problem219_HardProblems_WordTransformer_C&apos; to &apos;CTCI_Problem219_HardProblems_WordTransformer_C_DNU&apos;" description="Rename resource &apos;CTCI_Problem219_HardProblems_WordTransformer_C&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/CTCI_Problem219_HardProblems_WordTransformer_C" name="CTCI_Problem219_HardProblems_WordTransformer_C_DNU" stamp="1563201244867" updateReferences="true"/>
-</session>

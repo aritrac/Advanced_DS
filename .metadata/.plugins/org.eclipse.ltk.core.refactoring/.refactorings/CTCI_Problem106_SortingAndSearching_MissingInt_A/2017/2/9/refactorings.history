@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move element &apos;numbers.txt&apos; to &apos;CTCI_Problem107_SortingAndSearching_MissingInt_B/src&apos;&#x0D;&#x0A;- Original project: &apos;CTCI_Problem106_SortingAndSearching_MissingInt_A&apos;&#x0D;&#x0A;- Destination element: &apos;CTCI_Problem107_SortingAndSearching_MissingInt_B/src&apos;&#x0D;&#x0A;- Original element: &apos;numbers.txt&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=CTCI_Problem107_SortingAndSearching_MissingInt_B/src" element1="src/numbers.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1488117929003" units="0" version="1.0"/>
-</session>

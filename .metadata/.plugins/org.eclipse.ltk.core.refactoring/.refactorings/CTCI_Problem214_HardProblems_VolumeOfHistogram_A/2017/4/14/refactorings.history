@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;Histogram.png&apos; to &apos;CTCI_Problem215_HardProblems_VolumeOfHistogram_B/src&apos;&#x0D;&#x0A;- Original project: &apos;CTCI_Problem214_HardProblems_VolumeOfHistogram_A&apos;&#x0D;&#x0A;- Destination element: &apos;CTCI_Problem215_HardProblems_VolumeOfHistogram_B/src&apos;&#x0D;&#x0A;- Original element: &apos;Histogram.png&apos;" description="Copy file" destination="=CTCI_Problem215_HardProblems_VolumeOfHistogram_B/src" element1="src/Histogram.png" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1491627585392" units="0" version="1.0"/>
-</session>

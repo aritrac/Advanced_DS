@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;ctci.solutions.aritra.PowetSet&apos; to &apos;PowerSet&apos;&#x0D;&#x0A;- Original project: &apos;CTCI_Problem080_RecursionAndDP_PowerSet_A&apos;&#x0D;&#x0A;- Original element: &apos;ctci.solutions.aritra.PowetSet&apos;&#x0D;&#x0A;- Renamed element: &apos;ctci.solutions.aritra.PowerSet&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PowetSet&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ctci.solutions.aritra{PowetSet.java[PowetSet" matchStrategy="1" name="PowerSet" qualified="false" references="true" similarDeclarations="false" stamp="1487260285214" textual="false" version="1.0"/>
-</session>

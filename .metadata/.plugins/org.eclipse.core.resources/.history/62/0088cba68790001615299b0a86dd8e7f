@@ -1,8 +1,0 @@
-import java.util.*;
-
-class Solutions {
-    public static void main(String args[] ) throws Exception {
-        Scanner in = new Scanner(System.in);
-        long N = in.nextLong(); 
-    }
-}
